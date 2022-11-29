@@ -34,9 +34,9 @@ Este ejercico cumple todos los requisitos.
 
 Apunte sobre el código:
 
-La Api utilizada no permite tener un array vacio. Por ello para borrar la última tarea de la lista, hay que borrar la lista completa de la base de datos. Cada vez que se borren todas las tareas de la base de datos y se quiera volver a usar habrá que crear una nueva lista en la base de datos antes de agregar una nueva tarea.
+La Api utilizada no permite tener un array vacio. Por ello para borrar la última tarea de la lista, hay que borrar la lista completa de la base de datos. Cada vez que se borren todas las tareas de la base de datos y se quiera volver a usar, habrá que crear una nueva lista en la base de datos antes de agregar una nueva tarea.
 
-<img src="src/img/wtdtw responsive.png">
+<img src="src/img/WTDTW responsive.png">
 
 Puedes probar cómo funciona aquí:
 
