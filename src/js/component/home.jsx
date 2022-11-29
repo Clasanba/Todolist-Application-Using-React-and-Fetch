@@ -4,8 +4,8 @@ import React, { useEffect, useRef, useState } from "react";
 
 //create your first component
 const Home = () => {
-    const [tasks, setTasks] = useState([])  //variable de estado de tipo array
-    const inputRef = useRef(); // variable de estado que sirve para hacer referencia al algún punto del código
+    const [tasks, setTasks] = useState([])  
+    const inputRef = useRef();
 
 
     const createList = () => {
@@ -27,7 +27,7 @@ const Home = () => {
                 console.log(data); 
             })
             .catch(error => {
-                //manejo de errores
+                
                 console.log(error);
             });
     }
@@ -42,18 +42,13 @@ const Home = () => {
             })
             .then(data => {
                 setTasks(data)
-                //console.log(typeof list); //esto imprimirá en la consola el objeto exacto recibido del servidor
+                
             })
             .catch(error => {
-                //manejo de errores
+                
                 console.log(error);
             });
-        
-
     }, [])
-
-    
-
 
     const saveTasks = (tasks) => {
         if (tasks.length === 0) {
@@ -77,7 +72,7 @@ const Home = () => {
                 console.log(data); 
             })
             .catch(error => {
-                //manejo de errores
+                
                 console.log(error);
             });
     }
@@ -147,7 +142,7 @@ const Home = () => {
 
     return (<>
         <div className="container">
-            <h1>Todos</h1>
+            <h1>¿Qué hacemos esta semana?</h1>
             <form onSubmit={onAddButtonClick} className="input-group mb-3">
                 <input ref={inputRef} type="text" className="form-control" aria-label="Text input with segmented dropdown button" />
             </form>
@@ -157,12 +152,12 @@ const Home = () => {
                 : <div>
                     <ul>{
                         tasks.map((taskElement, i) => {
-                            return (<li key={i}>{taskElement.label} <button type="button" className="btn-close" aria-label="Delete" onClick={() => onDeleteButtonClick(i)}></button></li>
+                            return (<li key={i}>{taskElement.label} <button type="button" className="fa-regular fa-trash-can btn-delete" aria-label="Delete" onClick={() => onDeleteButtonClick(i)}></button></li>
                             )
                         })
                     }
                     </ul>
-                    <button type="button" className="" aria-label="Delete" onClick={() => onDeleteButtonAll()}>Borrar todo</button>
+                    <button type="button" className="btn-dlt-all border rounded" aria-label="Delete" onClick={() => onDeleteButtonAll()}>Borrar todo</button>
                 </div>
             }
 

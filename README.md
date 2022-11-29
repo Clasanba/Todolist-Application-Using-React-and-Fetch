@@ -1,46 +1,42 @@
-# Hello World with React boilerplate
-<p>
-  <a href="https://gitpod.io#https://github.com/4GeeksAcademy/react-hello.git"><img src="https://raw.githubusercontent.com/4GeeksAcademy/react-hello/master/open-in-gitpod.svg?sanitize=true" />
-  </a>
-</p>
+# What To Do this Week?
 
-This template is similar to create-react-app but it's meant for 4Geeks Academy students.
+What To Do This Week es la continuación de What To Do Today. En este ejercicio las tareas se guardan en la base de datos e incorpora un botón para borrar todas las tareas de la base de datos.
 
-##### Download the boilerplate using git
 
-```
-$ git clone https://github.com/4GeeksAcademy/react-hello.git
-$ cd react-hello
-```
+<img src="src/img/wtdtw.png">
+<img src="src/img/wtdtw-tasks.png">
 
-##### and install the npm package:
+## Instala dependencias
+
 ```
 $ npm install
 ```
 
-## Start coding!
+## ¡Empieza a programar!
 
 For Windows, Mac, Linux or Gitpod, start the webpack server with live reload:
 - `$ npm run start`
+<p>
+  <a href="https://gitpod.io#https://github.com/4GeeksAcademy/react-hello.git"><img src="https://raw.githubusercontent.com/4GeeksAcademy/react-hello/master/open-in-gitpod.svg?sanitize=true" />
+  </a>
+</p>
+Esta plantilla es similar a create-react-app pero está pensada para los estudiantes de la Academia 4Geeks.
 
-You can update the `styles/index.css` or `js/index.js` depending on your needs.
-Add more files into your, `./src/js/components` or styles folder as you need them.
+## 📝 Instrucciones
 
-## Publish your website!
+-Haz que tu TODO List se sincronice con la API de backend cada vez que se agregue o elimine una tarea.
+-Agregue un botón de limpieza de todas las tareas que eliminará toda la lista del servidor y actualizará la lista vacía en el front-end.
 
-This boilerplate is 100% compatible with the free [github pages](https://pages.github.com/) and [vercel](https://vercel.com/) hosting.
+## ✨ Sobre el Proyecto
 
-It takes just 2 minutes to deploy, [click here to start the process](https://github.com/4GeeksAcademy/react-hello/blob/master/docs/DEPLOY.md).
+Este ejercico cumple todos los requisitos. 
 
-## Other features
+Apunte sobre el código:
 
-- Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code indentation and formatting.
-- Error reporting: Use of [eslint](https://eslint.org/) for better error reporting.
-- Hot Deploy: Use of [Webpack Development Server](https://webpack.js.org/configuration/dev-server/) for hot deploy and live reload.
-- One-command publish of the code to github pages with `npm run deploy:github`.
-- Babel 7 (really fast).
+La Api utilizada no permite tener un array vacio. Por ello para borrar la última tarea de la lista, hay que borrar la lista completa de la base de datos. Cada vez que se borren todas las tareas de la base de datos y se quiera volver a usar habrá que crear una nueva lista en la base de datos antes de agregar una nueva tarea.
 
+<img src="src/img/wtdt-responsive.png">
 
+Puedes probar cómo funciona aquí:
 
-####################################################################################
-
+https://what-to-do-today-xi.vercel.app/

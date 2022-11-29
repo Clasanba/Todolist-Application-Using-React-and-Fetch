@@ -1,0 +1,45 @@
+.container{
+    width: 70%;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgba(150, 4, 82, 0.997);
+    background-color: rgba(236, 238, 240, 0.667);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:x-large;
+
+
+}
+#app{
+    
+    background-image: url("https://images.unsplash.com/photo-1538438253612-287c9fc9217e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color:rgba(150, 4, 82, 0.997);
+    font-style: italic;
+}
+.btn-delete{
+    border: none;
+    color:rgba(150, 4, 82, 0.997);
+    font-size: small;
+    margin-left: 1em;
+    background-color: transparent;
+}
+.btn-dlt-all{
+
+    color:rgba(150, 4, 82, 0.997);
+    font-size:0.5 em;
+    margin-left: 0.5em;
+    background-color: transparent;
+}
+.btn-dlt-all:hover{
+    background-color: rgba(95, 158, 160, 0.493);
+}
+
