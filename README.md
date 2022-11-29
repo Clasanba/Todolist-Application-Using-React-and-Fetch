@@ -24,8 +24,9 @@ Esta plantilla es similar a create-react-app pero está pensada para los estudia
 
 ## 📝 Instrucciones
 
--Haz que tu TODO List se sincronice con la API de backend cada vez que se agregue o elimine una tarea.
--Agregue un botón de limpieza de todas las tareas que eliminará toda la lista del servidor y actualizará la lista vacía en el front-end.
+ - Haz que tu TODO List se sincronice con la API de backend cada vez que se agregue o elimine una tarea.
+
+ - Agregue un botón de limpieza de todas las tareas que eliminará toda la lista del servidor y actualizará la lista vacía en el front-end.
 
 ## ✨ Sobre el Proyecto
 
